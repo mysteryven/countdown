@@ -1,7 +1,7 @@
-# countdown
+# Countdown
 
-## timer1 - setInterval 实现
+## 运行
 
-## timer2 - setTimeout 实现
-
-## timer3 - requestAnimation 实现
+```bash 
+yarn start
+```

@@ -1,4 +1,5 @@
-import {Callback, TimerComponent} from "../index"
+
+import {Callback, TimerComponent} from "../common"
 
 export class Timer3 implements TimerComponent {
   callback: Callback
