@@ -56,9 +56,10 @@ export class Timer2 implements TimerComponent {
   }
 
   private computeDiff() {
+    const ACCEPT_ERROR = 200;
     this.#timeFlag = this.#timeFlag || (new Date().getTime() - REFRESH_INTERVAL)
     const current = new Date().getTime()
-    const res = Math.min(current - this.#timeFlag, REFRESH_INTERVAL + 200) - REFRESH_INTERVAL
+    const res = Math.min(current - this.#timeFlag, REFRESH_INTERVAL + ACCEPT_ERROR) - REFRESH_INTERVAL
     this.#timeFlag = current
     return res
   }
