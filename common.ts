@@ -8,3 +8,5 @@ export interface TimerComponent {
 }
 
 export type Callback = (remain: number) => void
+export const REFRESH_INTERVAL = 1000
+export const TIME = 5000

@@ -1,5 +1,4 @@
-import {REFRESH_INTERVAL} from "../index"
-import {Callback, TimerComponent} from "../common"
+import {Callback, REFRESH_INTERVAL, TimerComponent} from "../common"
 
 export class Timer2 implements TimerComponent {
   callback: Callback
@@ -13,6 +12,10 @@ export class Timer2 implements TimerComponent {
     this.callback = callback
     this.#isStopped = false
     this.#timeFlag = undefined
+
+    // window.addEventListener('focus', () => {
+    //   console.log('hi')
+    // })
   }
 
   reset(duration: number): void {

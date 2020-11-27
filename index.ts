@@ -1,11 +1,8 @@
 import {Timer1} from "./timer1/timer1"
 import {Timer2} from "./timer2/timer2"
 import {Timer3} from "./timer3/timer3"
-import {GroupItem} from "./common"
+import {GroupItem, TIME} from "./common"
 
-export const REFRESH_INTERVAL = 1000
-
-const TIME = 5000
 let timer: number | null = null
 
 const countdown = new Timer1(TIME, updateTimer)

@@ -1,5 +1,4 @@
-import {REFRESH_INTERVAL} from "../index"
-import {Callback, TimerComponent} from "../common"
+import {Callback, REFRESH_INTERVAL, TimerComponent} from "../common"
 
 export class Timer1 implements TimerComponent {
   callback: Callback
