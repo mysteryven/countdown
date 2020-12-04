@@ -25,7 +25,7 @@ export class Timer3 implements TimerComponent {
     this.runner()
   }
 
-  runner() {
+  private runner() {
     if (this.#isStopped) {
       return
     }
@@ -45,7 +45,7 @@ export class Timer3 implements TimerComponent {
     this.callback(Math.max(this.#duration, 0))
   }
 
-  computeRemain() {
+  private computeRemain() {
     const current = new Date().getTime()
     return (this.#endTime ?? current) - current
   }

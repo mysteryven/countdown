@@ -32,7 +32,7 @@ export class Timer2 implements TimerComponent {
     this.runner()
   }
 
-  runner() {
+  private runner() {
     if (this.#duration <= 0 || this.#isStopped) {
       this.#duration = 0
       this.callback(0)
